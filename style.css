@@ -1,0 +1,44 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 93%);
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+}
+.header {
+  background: url("images/image-hero-desktop.jpg") no-repeat;
+  background-size: contain;
+  padding: 5% 10% 22%;
+}
+.navbar {
+  display: flex;
+  color: hsl(0, 0%, 100%);
+}
+.logo {
+  float: left;
+}
+.navitem {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  justify-content: flex-end;
+}
+.navitem button {
+  border: none;
+  margin-left: 4%;
+  color: hsl(0, 0%, 100%);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
