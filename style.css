@@ -222,7 +222,134 @@ h4 {
 }
 /*******************************modal1*****************/
 .modal1 {
+  /*display: none;*/
+  margin: 8% 24%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3%;
+  color: hsl(0, 0%, 48%);
+  font-weight: 400;
+  border-radius: 5px;
+}
+.modal-header {
+  padding-bottom: 3%;
+}
+.modal-title {
+  margin-bottom: 3%;
+}
+.modal-title img {
+  float: right;
+}
+.modal-title h3 {
+  padding: 1% 0%;
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+}
+.modal-body {
+  margin: 2% 0%;
+}
+.card-option {
+  border: 1px solid hsl(0, 0%, 83%);
+  border-radius: 5px;
+  padding: 6% 0% 0%;
+  margin: 4% 0%;
+}
+.card-option-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0% 3%;
+}
+.left,
+.right {
+  display: flex;
+  flex: auto;
+}
+.left {
+  justify-content: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.left input[type="radio"] {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+}
+.card-option-title {
+  margin-left: 12%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(0, 0%, 0%);
+}
+.card-option-title span {
+  color: hsl(176, 50%, 47%);
+  padding-left: 2%;
+  font-weight: 400;
+}
+.right p {
+  margin-left: 4%;
+  font-weight: 500;
+}
+.card-option-body {
+  padding: 3% 2% 4%;
+  margin-left: 12%;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+}
+.status {
   display: none;
+  /*display: flex;*/
+}
+.status p {
+  margin-left: 2%;
+  font-weight: 500;
+}
+.card-option-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 3% 6%;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 83%);
+}
+.card-foot1,
+.card-foot2 {
+  display: flex;
+  flex-direction: row;
+}
+.card-foot1 {
+  flex: 40%;
+  justify-content: flex-start;
+  font-weight: 500;
+}
+.card-foot2 {
+  flex: 60%;
+  justify-content: flex-end;
+}
+.input-text {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 48%);
+  border-radius: 25px;
+  margin-right: 4%;
+  padding: 0% 5%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card-foot2 input[type="text"] {
+  width: 50px;
+  height: auto;
+  padding: 10%;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.card-foot2 button {
+  height: auto;
+  width: 110px;
+  padding: 4%;
 }
 /*******************************modal2*******************/
 .modal2 {
