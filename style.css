@@ -8,6 +8,24 @@ body {
   font-family: "Commissioner", sans-serif;
   font-size: 16px;
 }
+button {
+  padding: 2% 4%;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: hsl(176, 50%, 47%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+button:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+.site-body {
+  margin: 5% 24% 0%;
+  position: relative;
+  transform: translateY(-13%);
+}
+/**********************header**********************/
 .header {
   background: url("images/image-hero-desktop.jpg") no-repeat;
   background-size: contain;
@@ -29,16 +47,184 @@ body {
 .navitem button {
   border: none;
   margin-left: 4%;
+  padding: 0%;
   color: hsl(0, 0%, 100%);
   background-color: transparent;
   font-size: 16px;
   font-weight: 500;
 }
+/*****************************section1*********************/
+.section1 {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+}
+.sec1-header {
+  padding-bottom: 3%;
+}
 
-.attribution {
-  font-size: 11px;
+.sec1-header > img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sec1-body {
   text-align: center;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.sec1-body > h2 {
+  font-weight: 700;
+  padding: 1% 0%;
+  color: hsl(0, 0%, 0%);
+}
+.sec1-body > p {
+  font-weight: 500;
+  padding: 1% 0%;
+  color: hsl(0, 0%, 48%);
+}
+.sec1-footer {
+  padding: 3% 5% 5%;
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.bookmark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 96%);
+  padding-right: 3%;
+}
+.bookmark .btn-2 {
+  background-color: transparent;
+  color: hsl(0, 0%, 48%);
+  font-weight: 700;
+}
+/***********************section2************************/
+.section2 {
+  background-color: hsl(0, 0%, 100%);
+  margin: 3% 0%;
+  padding: 3% 2%;
+  border-radius: 5px;
+}
+.sec2-header {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 0%;
+}
+.col1,
+.col2,
+.col3 {
+  display: flex;
+  flex-direction: column;
+  flex: 33.33%;
+  text-align: left;
+  font-weight: 700;
+  padding: 0% 3%;
+}
+.col2 {
+  border-left: 2px solid hsl(0, 0%, 93%);
+  border-right: 2px solid hsl(0, 0%, 93%);
+}
+h1 {
+  padding: 3% 0%;
+  color: hsl(0, 0%, 0%);
+}
+.sec2-header p {
+  color: hsl(0, 0%, 48%);
+}
+.progress-bar {
+  margin: 3%;
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 25px;
+}
+.progress {
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 25px;
+  width: 78%;
+  height: 10px;
+}
+/***************************section3*********************/
+.section3 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5%;
+  border-radius: 5px;
+}
+h3 {
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+.section3 > p {
+  color: hsl(0, 0%, 48%);
+  text-align: left;
+  line-height: 1.5;
+  margin: 4% 0%;
+}
+.card {
+  border: 1px solid hsl(0, 0%, 83%);
+  border-radius: 5px;
+  padding: 5%;
+  margin: 3% 0%;
+}
+.card-header {
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.card-title1,
+.card-title2 {
+  display: flex;
+  flex: 50%;
+}
+.card-title1 {
+  justify-content: flex-start;
+}
+.card-title2 {
+  justify-content: flex-end;
+  color: hsl(176, 50%, 47%);
+}
+h4 {
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+.card-body {
+  line-height: 1.5;
+  color: hsl(0, 0%, 48%);
+}
+.card-footer {
+  margin: 3% 0% 0%;
+  display: flex;
+  flex-direction: row;
+}
+.foot-item1,
+.foot-item2 {
+  display: flex;
+  flex-direction: row;
+  flex: 50%;
+  align-items: center;
+}
+.foot-item1 {
+  justify-content: flex-start;
+}
+.foot-item1 p {
+  padding: 0% 2%;
+  color: hsl(0, 0%, 48%);
+}
+.foot-item2 {
+  justify-content: flex-end;
+}
+.foot-item2 button {
+  padding: 4%;
+  width: 130px;
+  height: auto;
+}
+/*******************************modal1*****************/
+.modal1 {
+  display: none;
+}
+/*******************************modal2*******************/
+.modal2 {
+  display: none;
 }
