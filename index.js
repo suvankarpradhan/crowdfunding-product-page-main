@@ -37,3 +37,11 @@ function disableElseStyle(){
 function disableElseSelect(){
     $('.card-option .card-option-footer').css('display','none');
 }
+function modal1(){
+    $('.modal').css('display','block');
+    $('.modal1').css('display','block');
+}
+$('.modal-title img').click(()=>{
+    $('.modal1').css('display','none');
+    $('.modal').css('display','none');
+})

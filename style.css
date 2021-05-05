@@ -221,9 +221,20 @@ h4 {
   height: auto;
 }
 /*******************************modal1*****************/
+.modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 1;
+}
 .modal1 {
-  /*display: none;*/
-  margin: 8% 24%;
+  display: none;
+  margin: 15% 24%;
   background-color: hsl(0, 0%, 100%);
   padding: 3%;
   color: hsl(0, 0%, 48%);
@@ -238,6 +249,9 @@ h4 {
 }
 .modal-title img {
   float: right;
+}
+.modal-title img:hover {
+  transform: scale(1.25);
 }
 .modal-title h3 {
   padding: 1% 0%;

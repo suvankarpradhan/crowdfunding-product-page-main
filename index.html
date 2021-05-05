@@ -44,7 +44,7 @@
           </p>
         </div>
         <div class="sec1-footer">
-          <button class="btn-1">Back this project</button>
+          <button class="btn-1" onclick="modal1()">Back this project</button>
           <div class="bookmark">
             <img src="images/icon-bookmark.svg" alt="img" />
             <button class="btn-2">Bookmark</button>
@@ -146,174 +146,175 @@
         </div>
       </div>
     </div>
+    <div class="modal">
+      <!-- Selection modal start -->
 
-    <!-- Selection modal start -->
-
-    <div class="modal1">
-      <div class="modal-header">
-        <div class="modal-title">
-          <img src="images/icon-close-modal.svg" alt="X" />
-          <h3>Back this project</h3>
-        </div>
-        <p>
-          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
-          the world?
-        </p>
-      </div>
-      <div class="modal-body">
-        <div class="card-option one">
-          <div class="card-option-header">
-            <div class="left">
-              <input type="radio" name="yesorno" id="card-option-1" />
-              <p class="card-option-title">Pledge with no reward</p>
-            </div>
-            <div class="right"></div>
+      <div class="modal1">
+        <div class="modal-header">
+          <div class="modal-title">
+            <img src="images/icon-close-modal.svg" alt="X" />
+            <h3>Back this project</h3>
           </div>
-          <div class="card-option-body">
-            Choose to support us without a reward if you simply believe in our
-            project. As a backer, you will be signed up to receive product
-            updates via email.
-          </div>
+          <p>
+            Want to support us in bringing Mastercraft Bamboo Monitor Riser out
+            in the world?
+          </p>
         </div>
-
-        <div class="card-option two">
-          <div class="card-option-header">
-            <div class="left">
-              <input type="radio" name="yesorno" id="card-option-2" />
-              <p class="card-option-title">
-                Bamboo Stand <span>Pledge $25 or more</span>
-              </p>
+        <div class="modal-body">
+          <div class="card-option one">
+            <div class="card-option-header">
+              <div class="left">
+                <input type="radio" name="yesorno" id="card-option-1" />
+                <p class="card-option-title">Pledge with no reward</p>
+              </div>
+              <div class="right"></div>
             </div>
-            <div class="right">
+            <div class="card-option-body">
+              Choose to support us without a reward if you simply believe in our
+              project. As a backer, you will be signed up to receive product
+              updates via email.
+            </div>
+          </div>
+
+          <div class="card-option two">
+            <div class="card-option-header">
+              <div class="left">
+                <input type="radio" name="yesorno" id="card-option-2" />
+                <p class="card-option-title">
+                  Bamboo Stand <span>Pledge $25 or more</span>
+                </p>
+              </div>
+              <div class="right">
+                <h3>101</h3>
+                <p>left</p>
+              </div>
+            </div>
+            <div class="card-option-body">
+              You get an ergonomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you’ll be added to a
+              special Backer member list.
+            </div>
+            <div class="status">
               <h3>101</h3>
               <p>left</p>
             </div>
-          </div>
-          <div class="card-option-body">
-            You get an ergonomic stand made of natural bamboo. You've helped us
-            launch our promotional campaign, and you’ll be added to a special
-            Backer member list.
-          </div>
-          <div class="status">
-            <h3>101</h3>
-            <p>left</p>
-          </div>
-          <!-- Selected pledge start -->
-          <div class="card-option-footer">
-            <div class="card-foot1">Enter your pledge</div>
-            <div class="card-foot2">
-              <div class="input-text">
-                $
-                <input
-                  type="text"
-                  name="bamboo_stand"
-                  id="bamboo_stand"
-                  value="25"
-                />
+            <!-- Selected pledge start -->
+            <div class="card-option-footer">
+              <div class="card-foot1">Enter your pledge</div>
+              <div class="card-foot2">
+                <div class="input-text">
+                  $
+                  <input
+                    type="text"
+                    name="bamboo_stand"
+                    id="bamboo_stand"
+                    value="25"
+                  />
+                </div>
+                <button>Continue</button>
               </div>
-              <button>Continue</button>
             </div>
+            <!-- Selected pledge end -->
           </div>
-          <!-- Selected pledge end -->
-        </div>
 
-        <div class="card-option three">
-          <div class="card-option-header">
-            <div class="left">
-              <input type="radio" name="yesorno" id="card-option-3" />
-              <p class="card-option-title">
-                Black Edition stand<span>Pledge $75 or more</span>
-              </p>
+          <div class="card-option three">
+            <div class="card-option-header">
+              <div class="left">
+                <input type="radio" name="yesorno" id="card-option-3" />
+                <p class="card-option-title">
+                  Black Edition stand<span>Pledge $75 or more</span>
+                </p>
+              </div>
+              <div class="right">
+                <h3>64</h3>
+                <p>left</p>
+              </div>
             </div>
-            <div class="right">
+            <div class="card-option-body">
+              You get a Black Special Edition computer stand and a personal
+              thank you. You’ll be added to our Backer member list. Shipping is
+              included.
+            </div>
+            <div class="status">
               <h3>64</h3>
               <p>left</p>
             </div>
-          </div>
-          <div class="card-option-body">
-            You get a Black Special Edition computer stand and a personal thank
-            you. You’ll be added to our Backer member list. Shipping is
-            included.
-          </div>
-          <div class="status">
-            <h3>64</h3>
-            <p>left</p>
-          </div>
-          <!-- Selected pledge start -->
-          <div class="card-option-footer">
-            <div class="card-foot1">Enter your pledge</div>
-            <div class="card-foot2">
-              <div class="input-text">
-                $
-                <input
-                  type="text"
-                  name="black_edition_stand"
-                  id="black_edition_stand"
-                  value="75"
-                />
+            <!-- Selected pledge start -->
+            <div class="card-option-footer">
+              <div class="card-foot1">Enter your pledge</div>
+              <div class="card-foot2">
+                <div class="input-text">
+                  $
+                  <input
+                    type="text"
+                    name="black_edition_stand"
+                    id="black_edition_stand"
+                    value="75"
+                  />
+                </div>
+                <button>Continue</button>
               </div>
-              <button>Continue</button>
             </div>
+            <!-- Selected pledge end -->
           </div>
-          <!-- Selected pledge end -->
-        </div>
 
-        <div class="card-option four">
-          <div class="card-option-header">
-            <div class="left">
-              <input type="radio" name="yesorno" id="card-option-4" />
-              <p class="card-option-title">
-                Mahogany Special Edition <span>Pledge $200 or more</span>
-              </p>
+          <div class="card-option four">
+            <div class="card-option-header">
+              <div class="left">
+                <input type="radio" name="yesorno" id="card-option-4" />
+                <p class="card-option-title">
+                  Mahogany Special Edition <span>Pledge $200 or more</span>
+                </p>
+              </div>
+              <div class="right">
+                <h3>0</h3>
+                <p>left</p>
+              </div>
             </div>
-            <div class="right">
+            <div class="card-option-body">
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and
+              a personal thank you. You’ll be added to our Backer member list.
+              Shipping is included.
+            </div>
+            <div class="status">
               <h3>0</h3>
               <p>left</p>
             </div>
-          </div>
-          <div class="card-option-body">
-            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
-            personal thank you. You’ll be added to our Backer member list.
-            Shipping is included.
-          </div>
-          <div class="status">
-            <h3>0</h3>
-            <p>left</p>
-          </div>
-          <!-- Selected pledge  start -->
-          <div class="card-option-footer">
-            <div class="card-foot1">Enter your pledge</div>
-            <div class="card-foot2">
-              <div class="input-text">
-                $
-                <input
-                  type="text"
-                  name="mahogany_special_edition"
-                  id="mahogany_special_edition"
-                  value="200"
-                />
+            <!-- Selected pledge  start -->
+            <div class="card-option-footer">
+              <div class="card-foot1">Enter your pledge</div>
+              <div class="card-foot2">
+                <div class="input-text">
+                  $
+                  <input
+                    type="text"
+                    name="mahogany_special_edition"
+                    id="mahogany_special_edition"
+                    value="200"
+                  />
+                </div>
+                <button>Continue</button>
               </div>
-              <button>Continue</button>
             </div>
+            <!-- Selected pledge end -->
           </div>
-          <!-- Selected pledge end -->
         </div>
       </div>
-    </div>
 
-    <!-- Selection modal end -->
+      <!-- Selection modal end -->
 
-    <!-- Success modal start -->
+      <!-- Success modal start -->
 
-    <div class="modal2">
-      <img src="images/icon-check.svg" alt="\/" />
-      <h2>Thanks for your support!</h2>
-      <p>
-        Your pledge brings us one step closer to sharing Mastercraft Bamboo
-        Monitor Riser worldwide. You will get an email once our campaign is
-        completed.
-      </p>
-      <button>Got it!</button>
+      <div class="modal2">
+        <img src="images/icon-check.svg" alt="\/" />
+        <h2>Thanks for your support!</h2>
+        <p>
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo
+          Monitor Riser worldwide. You will get an email once our campaign is
+          completed.
+        </p>
+        <button>Got it!</button>
+      </div>
     </div>
 
     <!-- Success modal end -->
