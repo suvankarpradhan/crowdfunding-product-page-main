@@ -250,7 +250,7 @@ h4 {
 .card-option {
   border: 1px solid hsl(0, 0%, 83%);
   border-radius: 5px;
-  padding: 6% 0% 0%;
+  padding-top: 6%;
   margin: 4% 0%;
 }
 .card-option-header {
@@ -272,8 +272,8 @@ h4 {
 }
 .left input[type="radio"] {
   align-self: center;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 .card-option-title {
   margin-left: 12%;
@@ -292,7 +292,7 @@ h4 {
   font-weight: 500;
 }
 .card-option-body {
-  padding: 3% 2% 4%;
+  padding: 3% 2% 6%;
   margin-left: 12%;
   font-weight: 400;
   text-align: left;
@@ -307,9 +307,10 @@ h4 {
   font-weight: 500;
 }
 .card-option-footer {
-  display: flex;
+  display: none;
+  /*display: flex;*/
   flex-direction: row;
-  padding: 2% 3% 6%;
+  padding: 3%;
   align-items: center;
   border-top: 1px solid hsl(0, 0%, 83%);
 }
