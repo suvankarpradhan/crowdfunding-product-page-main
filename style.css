@@ -19,6 +19,7 @@ button {
 }
 button:hover {
   background-color: hsl(176, 72%, 28%);
+  cursor: pointer;
 }
 .site-body {
   margin: 5% 24% 0%;
@@ -227,10 +228,10 @@ h4 {
   width: 100%;
   top: 0%;
   left: 0%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   z-index: 1;
+  overflow: scroll;
 }
 .modal1 {
   display: none;
@@ -252,6 +253,7 @@ h4 {
 }
 .modal-title img:hover {
   transform: scale(1.25);
+  cursor: pointer;
 }
 .modal-title h3 {
   padding: 1% 0%;
@@ -369,4 +371,34 @@ h4 {
 /*******************************modal2*******************/
 .modal2 {
   display: none;
+  margin: 10% 35%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3%;
+  color: hsl(0, 0%, 48%);
+  font-weight: 400;
+  border-radius: 5px;
+}
+.modal2 img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal2 h2 {
+  margin: 10% 0% 6%;
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+  text-align: center;
+}
+.modal p {
+  margin-bottom: 10%;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+.modal2 button {
+  height: 40px;
+  width: 90px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }

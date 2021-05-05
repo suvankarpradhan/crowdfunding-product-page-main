@@ -45,7 +45,7 @@
         </div>
         <div class="sec1-footer">
           <button class="btn-1" onclick="modal1()">Back this project</button>
-          <div class="bookmark">
+          <div class="bookmark" onclick="bookmark()">
             <img src="images/icon-bookmark.svg" alt="img" />
             <button class="btn-2">Bookmark</button>
           </div>
@@ -174,6 +174,14 @@
               project. As a backer, you will be signed up to receive product
               updates via email.
             </div>
+            <!-- Selected pledge start -->
+            <div class="card-option-footer">
+              <div class="card-foot1"></div>
+              <div class="card-foot2">
+                <button>Continue</button>
+              </div>
+            </div>
+            <!-- Selected pledge end -->
           </div>
 
           <div class="card-option two">
@@ -313,7 +321,7 @@
           Monitor Riser worldwide. You will get an email once our campaign is
           completed.
         </p>
-        <button>Got it!</button>
+        <button onclick="modalClose()">Got it!</button>
       </div>
     </div>
 

@@ -31,6 +31,19 @@ $('.card-option.four .left input').on('click',()=>{
     disableElseSelect();
     $('.card-option.four .card-option-footer').css('display','flex');
 })
+$('.modal-title img').click(()=>{
+    $('.modal1').css('display','none');
+    $('.modal').css('display','none');
+})
+$('.card-option-footer button').click(()=>{
+    $('.modal1').css('display','none');
+    $('.modal2').css('display','block');
+})
+function modalClose(){
+    console.log('clicked');
+    $('.modal2').css('display','none');
+    $('.modal').css('display','none');
+}
 function disableElseStyle(){
     $('.card-option').css('border','1px solid hsl(0, 0%, 83%)');
 }
@@ -41,7 +54,13 @@ function modal1(){
     $('.modal').css('display','block');
     $('.modal1').css('display','block');
 }
-$('.modal-title img').click(()=>{
-    $('.modal1').css('display','none');
-    $('.modal').css('display','none');
-})
+function bookmark(){
+    if($('.bookmark button').text()==='Bookmark'){
+        $('.bookmark button').text('Bookmarked');
+        $('.bookmark button').css('color','hsl(176, 50%, 47%)');
+    }else{
+        $('.bookmark button').text('Bookmark');
+        $('.bookmark button').css('color','hsl(0, 0%, 48%)');
+    }
+}
+    
