@@ -607,3 +607,8 @@ h4 {
     margin: 20% 10%;
   }
 }
+@media screen and (max-width: 450px) {
+  .site-body {
+    transform: translateY(-8%);
+  }
+}
