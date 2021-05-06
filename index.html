@@ -22,12 +22,15 @@
   </head>
   <body>
     <div class="header">
-      <div class="navbar">
+      <div class="navbar" id="nav">
         <div class="logo"><img src="images/logo.svg" alt="Crowdfund" /></div>
         <div class="navitem">
           <button>About</button>
           <button>Discover</button>
           <button>Get Started</button>
+          <a href="javascript:void(0);" class="icon" onclick="nav()">
+            <img src="images/icon-hamburger.svg" alt="=" />
+          </a>
         </div>
       </div>
     </div>
@@ -87,7 +90,7 @@
         <div class="card" id="card1">
           <div class="card-header">
             <div class="card-title1">
-              <h4>Bamboo Stand</h4>
+              <h3>Bamboo Stand</h3>
             </div>
             <div class="card-title2"><p>Pledge $25 or more</p></div>
           </div>
@@ -107,7 +110,7 @@
         <div class="card">
           <div class="card-header">
             <div class="card-title1">
-              <h4>Black Edition Stand</h4>
+              <h3>Black Edition Stand</h3>
             </div>
             <div class="card-title2"><p>Pledge $75 or more</p></div>
           </div>
@@ -127,7 +130,7 @@
         <div class="card" id="card3">
           <div class="card-header">
             <div class="card-title1">
-              <h4>Mahogany Special Edition</h4>
+              <h3>Mahogany Special Edition</h3>
             </div>
             <div class="card-title2"><p>Pledge $200 or more</p></div>
           </div>
@@ -203,7 +206,7 @@
               special Backer member list.
             </div>
             <div class="status">
-              <h3>101</h3>
+              <h2>101</h2>
               <p>left</p>
             </div>
             <!-- Selected pledge start -->
@@ -244,7 +247,7 @@
               included.
             </div>
             <div class="status">
-              <h3>64</h3>
+              <h2>64</h2>
               <p>left</p>
             </div>
             <!-- Selected pledge start -->
@@ -285,7 +288,7 @@
               Shipping is included.
             </div>
             <div class="status">
-              <h3>0</h3>
+              <h2>0</h2>
               <p>left</p>
             </div>
             <!-- Selected pledge  start -->

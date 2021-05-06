@@ -34,7 +34,7 @@ button:hover {
 }
 .navbar {
   display: flex;
-  color: hsl(0, 0%, 100%);
+  align-items: center;
 }
 .logo {
   float: left;
@@ -53,6 +53,11 @@ button:hover {
   background-color: transparent;
   font-size: 16px;
   font-weight: 500;
+}
+.navbar .icon {
+  display: none;
+  flex: auto;
+  justify-content: flex-end;
 }
 /*****************************section1*********************/
 .section1 {
@@ -162,6 +167,7 @@ h3 {
   text-align: left;
   line-height: 1.5;
   margin: 4% 0%;
+  font-weight: 400padd;
 }
 .card {
   border: 1px solid hsl(0, 0%, 83%);
@@ -316,7 +322,6 @@ h4 {
 }
 .status {
   display: none;
-  /*display: flex;*/
 }
 .status p {
   margin-left: 2%;
@@ -324,7 +329,6 @@ h4 {
 }
 .card-option-footer {
   display: none;
-  /*display: flex;*/
   flex-direction: row;
   padding: 3%;
   align-items: center;
@@ -389,7 +393,7 @@ h4 {
   font-weight: 700;
   text-align: center;
 }
-.modal p {
+.modal2 p {
   margin-bottom: 10%;
   font-weight: 400;
   text-align: center;
@@ -401,4 +405,182 @@ h4 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+/*******************responsive navbar****************************/
+@media screen and (max-width: 600px) {
+  .nav-item {
+    display: none;
+  }
+  .navbar .icon {
+    display: flex;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .nav-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-53%, 20%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 6%;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+/**************************end od responsive navbar****************************/
+@media screen and (max-width: 725px) {
+  .header {
+    background: url("images/image-hero-mobile.jpg") no-repeat;
+    padding: 8% 6% 75%;
+    background-size: contain;
+  }
+  .site-body {
+    margin: 15% 5% 0%;
+    transform: translateY(-15%);
+  }
+  /************************modal1**************************/
+  .modal1 {
+    margin: 20% 5%;
+  }
+}
+@media screen and (max-width: 525px) {
+  /*****************************section1************************/
+  .section1 {
+    padding: 5%;
+  }
+  .sec1-header > img {
+    transform: translate(-50%, -82%);
+  }
+  .sec1-body > h2,
+  .sec1-body > p {
+    padding: 2% 0%;
+  }
+  .sec1-footer {
+    padding: 3% 0% 5%;
+    align-items: stretch;
+  }
+  .sec1-footer .btn-1 {
+    font-weight: 700;
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+  }
+  .bookmark {
+    margin-left: 5%;
+    padding: 0%;
+  }
+  .bookmark .btn-2 {
+    display: none;
+  }
+  /********************************section2********************/
+  .sec2-header {
+    flex-direction: column;
+  }
+  .col1,
+  .col2,
+  .col3 {
+    align-items: center;
+    flex: 100%;
+    padding: 6% 0%;
+    border: none;
+  }
+  .col2 {
+    margin: 0% 30%;
+    border-top: 2px solid hsl(0, 0%, 93%);
+    border-bottom: 2px solid hsl(0, 0%, 93%);
+  }
+  h1 {
+    padding: 0%;
+  }
+  .sec2-header p {
+    padding-top: 2%;
+  }
+  .progress-bar {
+    margin-bottom: 6%;
+  }
+  .progress {
+    height: 12px;
+  }
+  /************************section3***********************/
+  .section3 {
+    padding: 10% 5%;
+  }
+  .section3 > p {
+    margin: 8% 0%;
+  }
+  .card-header {
+    flex-direction: column;
+  }
+  .card-title1,
+  .card-title2 {
+    flex: 100%;
+    justify-content: flex-start;
+    padding: 1% 0%;
+  }
+  .card-body {
+    padding-right: 10%;
+  }
+  .card-footer {
+    flex-direction: column;
+  }
+  .foot-item1,
+  .foot-item2 {
+    flex: 100%;
+    justify-content: flex-start;
+    padding: 2% 0%;
+  }
+  .foot-item1 h2 {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .foot-item2 button {
+    width: 150px;
+  }
+  /*******************modal1***************/
+  .modal1 {
+    margin: 20% 5%;
+    padding: 12% 6%;
+  }
+  .modal1 p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .card-option {
+    margin: 8% 0%;
+  }
+  .right {
+    display: none;
+  }
+  .card-option-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+  }
+  .card-option-title span {
+    padding: 2% 0%;
+  }
+  .status {
+    display: flex;
+    margin: 0% 5% 5%;
+    align-items: center;
+  }
+  .status h2 {
+    color: hsl(0, 0%, 0%);
+  }
+  .status p {
+    font-weight: 500;
+    padding-left: 2%;
+  }
+  .card-option-body {
+    padding: 3% 2% 6% 0%;
+  }
+  /***************************modal2*****************/
+  .modal2 {
+    margin: 20% 5%;
+    padding: 8% 6%;
+  }
 }

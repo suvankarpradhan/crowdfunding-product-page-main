@@ -63,4 +63,12 @@ function bookmark(){
         $('.bookmark button').css('color','hsl(0, 0%, 48%)');
     }
 }
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
     
