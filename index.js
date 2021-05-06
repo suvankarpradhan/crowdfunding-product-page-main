@@ -58,17 +58,21 @@ function bookmark(){
     if($('.bookmark button').text()==='Bookmark'){
         $('.bookmark button').text('Bookmarked');
         $('.bookmark button').css('color','hsl(176, 50%, 47%)');
+        $('.bookmark>img').attr('src','images/icon-bookmarked.svg');
     }else{
         $('.bookmark button').text('Bookmark');
         $('.bookmark button').css('color','hsl(0, 0%, 48%)');
+        $('.bookmark>img').attr('src','images/icon-bookmark.svg')
     }
 }
-function myFunction() {
+function nav() {
     var x = document.getElementById("nav");
     if (x.className === "navbar") {
       x.className += " responsive";
+      $('.icon>img').attr('src','images/icon-close-menu.svg');
     } else {
       x.className = "navbar";
+      $('.icon>img').attr('src','images/icon-hamburger.svg');
     }
   }
     

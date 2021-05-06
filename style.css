@@ -54,10 +54,11 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
 }
+.navitem button:hover {
+  font-size: 17px;
+}
 .navbar .icon {
   display: none;
-  flex: auto;
-  justify-content: flex-end;
 }
 /*****************************section1*********************/
 .section1 {
@@ -78,12 +79,12 @@ button:hover {
 }
 .sec1-body > h2 {
   font-weight: 700;
-  padding: 1% 0%;
+  padding: 1% 3%;
   color: hsl(0, 0%, 0%);
 }
 .sec1-body > p {
   font-weight: 500;
-  padding: 1% 0%;
+  padding: 1% 3%;
   color: hsl(0, 0%, 48%);
 }
 .sec1-footer {
@@ -408,26 +409,45 @@ h4 {
 }
 /*******************responsive navbar****************************/
 @media screen and (max-width: 600px) {
-  .nav-item {
+  .navitem {
     display: none;
   }
   .navbar .icon {
     display: flex;
+    flex: auto;
+    justify-content: flex-end;
   }
-  .navbar.responsive {
-    position: relative;
+  .navbar .icon:hover {
+    cursor: pointer;
   }
-  .navbar.responsive .nav-item {
+  .navbar.responsive .navitem {
     display: flex;
     flex-direction: column;
+    flex: 100%;
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-53%, 20%);
+    top: 20%;
+    left: 40%;
+    transform: translate(-44%, -20%);
     background-color: hsl(0, 0%, 100%);
-    padding: 6%;
-    width: 100%;
-    border-radius: 5px;
+    margin: 0% 5%;
+    width: 90%;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 0px 200px 100px rgba(0, 0, 0, 0.4);
+  }
+  .navbar.responsive button {
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+    text-align: left;
+    padding: 5%;
+    margin: 0%;
+    font-size: 17px;
+    border-radius: 0px;
+    border-top: 1px solid hsl(0, 0%, 93%);
+  }
+  .navbar.responsive button:hover {
+    font-size: 18px;
   }
 }
 /**************************end od responsive navbar****************************/
@@ -444,6 +464,10 @@ h4 {
   /************************modal1**************************/
   .modal1 {
     margin: 20% 5%;
+  }
+  .modal2 {
+    margin: 20% 5%;
+    padding: 8% 6%;
   }
 }
 @media screen and (max-width: 525px) {
@@ -541,7 +565,7 @@ h4 {
   }
   /*******************modal1***************/
   .modal1 {
-    margin: 20% 5%;
+    margin: 20% 6%;
     padding: 12% 6%;
   }
   .modal1 p {
@@ -580,7 +604,6 @@ h4 {
   }
   /***************************modal2*****************/
   .modal2 {
-    margin: 20% 5%;
-    padding: 8% 6%;
+    margin: 20% 10%;
   }
 }
