@@ -1,4 +1,5 @@
-document.getElementById('card3').style.opacity=0.5;
+$('#card3 .card-footer .foot-item2>button').css('background-color','hsl(0, 0%, 48%)');
+$('#card3').css('opacity','0.5');
 $('.card-option.one .left').on('click',()=>{
     disableElseStyle();
     $('.card-option.one').css('border','2px solid hsl(176, 50%, 47%)');
